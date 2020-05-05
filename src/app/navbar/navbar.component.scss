@@ -1,0 +1,36 @@
+@import "./../../scss/abstracts/abstracts";
+
+nav {
+    background-color: $primary-color;
+    & div {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: row;
+
+        & img {
+            width: 30rem;
+        }
+
+        & a {
+            align-self: center;
+            text-decoration: none;
+            padding-left: 2rem;
+            font-size: 1.8rem;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+
+            &:nth-of-type(2) {
+                margin-left: auto;
+            }
+
+            &:link, &:visited {
+                color: white;
+            }
+        }
+    }
+
+}
