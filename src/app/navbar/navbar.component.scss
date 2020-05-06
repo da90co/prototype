@@ -11,17 +11,21 @@ nav {
         flex-direction: row;
 
         & img {
-            width: 30rem;
+            width: 20rem;
         }
 
         & a {
             align-self: center;
             text-decoration: none;
             padding-left: 2rem;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             display:flex;
             flex-direction: column;
             text-align: center;
+
+            & i {
+                font-size:2rem;
+            }
 
             &:nth-of-type(2) {
                 margin-left: auto;

@@ -1,0 +1,31 @@
+@import "../../../scss/abstracts/abstracts";
+
+header {
+    padding: 1rem 2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,.2);
+    text-transform: uppercase;
+
+    & div {
+        max-width: $max-width;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+
+        & a {
+            &:link, &:visited {
+                color: black;
+                text-decoration: none;
+                padding-left: 1rem;
+            }
+
+            &:after {
+                content: "|";
+                padding-left: 1rem;
+            }
+
+            &:nth-child(2) {
+                margin-left: auto;
+            }
+        }
+    }
+}
