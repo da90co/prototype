@@ -8,6 +8,7 @@ import { SubnavComponent } from './navbar/subnav/subnav.component';
 import { SettingsComponent } from './settings/settings.component';
 import { MoreComponent } from './more/more.component';
 import { EquityComponent } from './equity/equity.component';
+import { PanelComponent } from './components/panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EquityComponent } from './equity/equity.component';
     SubnavComponent,
     SettingsComponent,
     MoreComponent,
-    EquityComponent
+    EquityComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
