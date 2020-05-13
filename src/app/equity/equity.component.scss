@@ -1,3 +1,12 @@
-app-panel {
+app-equity {
     flex: 1;
+    display: flex;
+
+    #panel1 {
+        flex-basis: 70%
+    }
+
+    #panel2 {
+        flex-basis: 30%;
+    }
 }

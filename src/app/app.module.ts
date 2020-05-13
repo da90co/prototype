@@ -9,6 +9,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { MoreComponent } from './more/more.component';
 import { EquityComponent } from './equity/equity.component';
 import { PanelComponent } from './components/panel/panel.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PanelComponent } from './components/panel/panel.component';
     SettingsComponent,
     MoreComponent,
     EquityComponent,
-    PanelComponent
+    PanelComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
