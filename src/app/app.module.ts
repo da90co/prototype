@@ -10,6 +10,7 @@ import { MoreComponent } from './more/more.component';
 import { EquityComponent } from './equity/equity.component';
 import { PanelComponent } from './components/panel/panel.component';
 import { InputComponent } from './components/input/input.component';
+import { InputReadonlyComponent } from './components/input/input-readonly/input-readonly.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { InputComponent } from './components/input/input.component';
     MoreComponent,
     EquityComponent,
     PanelComponent,
-    InputComponent
+    InputComponent,
+    InputReadonlyComponent
   ],
   imports: [
     BrowserModule,
