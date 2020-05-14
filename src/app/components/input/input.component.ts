@@ -9,6 +9,7 @@ import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 export class InputComponent implements OnInit {
   @Input() label: string;
   @Input() inputType: string;
+  @Input() width: string;
 
   constructor() { }
 

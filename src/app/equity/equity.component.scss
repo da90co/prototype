@@ -3,7 +3,29 @@ app-equity {
     display: flex;
 
     #panel1 {
-        flex-basis: 70%
+        flex-basis: 70%;
+
+        & form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & app-input {
+            & .input-group {
+                & label, input, span {
+                    max-width: 35rem;
+                }
+            }
+        }
+
+        & .fw {
+            flex-basis: 100%;
+        }
+
+        & .hw {
+            flex-basis: 50%;
+        }
+        }
     }
 
     #panel2 {
