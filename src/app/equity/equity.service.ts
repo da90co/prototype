@@ -9,8 +9,9 @@ export class EquityService {
 
     constructor(private http:HttpClient) {}
 
-    createApplicant(name: string, DOB: string, NiNum: string, mobileNum: number, homeNum: number, work: string) {
-        const applicantData: Equity = {Name: name, DOB: DOB, NiNum: NiNum, MobileNum: mobileNum, HomeNum: homeNum, Work: work };
+    createApplicant(name: string, DOB: string) {
+        const applicantData: Equity = {Name: name, DOB: DOB};
+        console.log(applicantData)
 
         this.http.post<{name:string}>(
             "https://prototype1-95aef.firebaseio.com/applicants.json",
