@@ -11,6 +11,8 @@ import { EquityComponent } from './equity/equity.component';
 import { PanelComponent } from './components/panel/panel.component';
 import { InputComponent } from './components/input/input.component';
 import { InputReadonlyComponent } from './components/input/input-readonly/input-readonly.component';
+import { FormsModule } from "@angular/forms"
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { InputReadonlyComponent } from './components/input/input-readonly/input-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
