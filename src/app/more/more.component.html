@@ -1,7 +1,27 @@
 <form #equityForm="ngForm" (ngSubmit)="onCreateEquity(equityForm.value)" style="display: flex; flex-direction: column;">
+    <label for="id">id</label>
+    <input type="text" id="id" name="id" ngModel>    
     <label for="name">Name</label>
     <input type="text" id="Name" name="Name" ngModel>
     <label for="DOB">DOB</label>
-    <input type="text" id="DOB" name="DOB" ngModel>
+    <input type="date" id="DOB" name="DOB" ngModel>
+    <label for="NI">NI Number</label>
+    <input type="text" id="NI" name="NI" ngModel>
+    <label for="MobileNum">Mobile #</label>
+    <input type="text" id="MobileNum" name="MobileNum" ngModel>
+    <label for="HomeNum">Home #</label>
+    <input type="text" id="HomeNum" name="Home" ngModel>
+    <label for="Email">E-mail</label>
+    <input type="text" id="Email" name="Email" ngModel>
+    <label for="MartialStatus">Martial Status</label>
+    <input type="text" id="MartialStatus" name="MartialStatus" ngModel>
+    <label for="Occupation">Occupation</label>
+    <input type="text" id="Occupation" name="Occupation" ngModel>
+    <label for="JobStatus">Job Status</label>
+    <input type="text" id="JobStatus" name="JobStatus" ngModel>
+    <label for="Dependants">Dependants</label>
+    <input type="text" id="Dependants" name="Dependants" ngModel>
+    <label for="DependantsDOB">Dependants DOB</label>
+    <input type="date" id="DependantsDOB" name="DependantsDOB" ngModel>
     <button type="submit">Submit</button>
 </form>

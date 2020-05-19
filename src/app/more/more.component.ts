@@ -16,7 +16,20 @@ export class MoreComponent implements OnInit {
   }
 
   onCreateEquity(equityData: Equity) {
-    this.equityService.createApplicant(equityData.Name, equityData.DOB)
+    this.equityService.createApplicant(
+        equityData.id,
+        equityData.Name,
+        equityData.DOB,
+        equityData.NI,
+        equityData.MobileNum,
+        equityData.HomeNum,
+        equityData.Email,
+        equityData.MartialStatus,
+        equityData.Occupation,
+        equityData.JobStatus,
+        equityData.Dependants,
+        equityData.DependantsDOB
+      )
   }
 
 }
