@@ -13,10 +13,23 @@ import { stringify } from 'querystring';
 export class EquityComponent implements OnInit {
   loadedEquity: Equity[] = [];
   isFetching = false;
+  error = null;
 
-  constructor() { }
+  constructor(private equityService: EquityService) { }
 
   ngOnInit(): void {
+    console.log("test")
+    this.onGetApplicants()
+  }
+
+  onGetApplicants() {
+    this.isFetching = true;
+    this.equityService.getApplicants().subscribe(applicants => {
+      this.isFetching = false;
+      this.loadedEquity = applicants;
+    }, error => {
+      this.error = error.message;
+    })
   }
 
 }

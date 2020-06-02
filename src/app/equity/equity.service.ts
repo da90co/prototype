@@ -48,5 +48,20 @@ export class EquityService {
             console.log(responseData)
         })
     }
+
+    
+    getApplicants() {
+            return this.http.get<{[key: string]: Equity}>("https://prototype1-95aef.firebaseio.com/applicants.json")
+            .pipe(map(responseData => {
+                const equityArray: Equity[] = [];
+                for (const key in responseData) {
+                    if (responseData.hasOwnProperty(key)) {
+                        equityArray.push({...responseData[key], id: key})
+                    }
+                }
+                return equityArray;
+                //console.log (equityArray)
+            }))
+    }
 }
 
