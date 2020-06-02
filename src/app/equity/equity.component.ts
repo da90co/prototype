@@ -1,8 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Equity } from "./equity.model"
-import { HttpClient } from '@angular/common/http';
 import { EquityService } from './equity.service';
-import { stringify } from 'querystring';
 
 @Component({
   selector: 'app-equity',
