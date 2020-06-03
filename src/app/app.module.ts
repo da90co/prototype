@@ -13,6 +13,10 @@ import { InputComponent } from './components/input/input.component';
 import { InputReadonlyComponent } from './components/input/input-readonly/input-readonly.component';
 import { FormsModule } from "@angular/forms"
 import { HttpClientModule } from "@angular/common/http";
+import { RentComponent } from './rent/rent.component';
+import { CustomerComponent } from './customer/customer.component';
+import { PropertyComponent } from './property/property.component';
+import { CasenotesComponent } from './casenotes/casenotes.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { HttpClientModule } from "@angular/common/http";
     EquityComponent,
     PanelComponent,
     InputComponent,
-    InputReadonlyComponent
+    InputReadonlyComponent,
+    RentComponent,
+    CustomerComponent,
+    PropertyComponent,
+    CasenotesComponent
   ],
   imports: [
     BrowserModule,
