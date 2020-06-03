@@ -2,6 +2,10 @@ app-equity {
     flex: 1;
     display: flex;
 
+    & section > div:first-of-type {
+        font-size: 1.6rem;
+    }
+
     #panel1 {
         flex-basis: 70%;
 
@@ -9,6 +13,9 @@ app-equity {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
 
         & app-input {
             & .input-group {
@@ -30,5 +37,28 @@ app-equity {
 
     #panel2 {
         flex-basis: 30%;
+        margin-left: 2rem;
+        padding: 0;
+        max-height: 50%;
+
+        & section > div:first-of-type {
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        .input-label {
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: row;
+
+            label, input {
+                flex: 1 1 50%;
+            }
+        }
+
+
+        & hr {
+            color: white;
+            border-style: solid;
+        }
     }
 }
