@@ -11,7 +11,7 @@ import { CasenotesComponent } from './casenotes/casenotes.component';
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "/",
+    redirectTo: "/equity",
     pathMatch: "full"
   },
   {

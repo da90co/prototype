@@ -1,10 +1,15 @@
 @import "../../../scss/abstracts/abstracts";
 
 header {
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     box-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,.2);
     text-transform: uppercase;
     margin-bottom: 2rem;
+    font-weight: bold;
+
+    & span {
+        color: #868686;
+    }
 
     & div {
         max-width: $max-width;
@@ -27,6 +32,12 @@ header {
                     &:after {
                         color: black;
                         font-weight: normal;
+                    }
+                }
+
+                &:link {
+                    &:hover {
+                        text-decoration: underline;
                     }
                 }
             }
