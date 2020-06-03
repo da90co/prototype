@@ -28,7 +28,7 @@
     <app-input-readonly labelName="Date of birth" value={{applicant.DOB}}></app-input-readonly>
     <app-input-readonly labelName="Nat Ins No" value={{applicant.NI}}></app-input-readonly>
     <app-input-readonly labelName="Mobile" value={{applicant.MobileNum}}></app-input-readonly>
-    <app-input-readonly labelName="Home" value={{applicant.Home}}></app-input-readonly>
+    <app-input-readonly labelName="Home" value={{applicant.HomeNum}}></app-input-readonly>
     <app-input-readonly labelName="Work" value={{applicant.Work}}></app-input-readonly>
     <app-input-readonly labelName="E-mail" value={{applicant.Email}}></app-input-readonly>
     <app-input-readonly labelName="Martial status" value={{applicant.MartialStatus}}></app-input-readonly>
@@ -38,9 +38,9 @@
     <app-input-readonly labelName="No. dependants" value={{applicant.Dependants}}></app-input-readonly>
     <app-input-readonly labelName="Dependants DOB" value={{applicant.DependantsDOB}}></app-input-readonly>
     <hr/>
-    <app-input-readonly labelName="Monthly" value="01/02/2010"></app-input-readonly>
-    <app-input-readonly labelName="Current arrears" value="-£123.45"></app-input-readonly>
-    <app-input-readonly labelName="Reason for arrears" value="N/A"></app-input-readonly>
+    <app-input-readonly labelName="Monthly" value={{applicant.Monthly}}></app-input-readonly>
+    <app-input-readonly labelName="Current arrears" value={{applicant.CurrentArrears}}></app-input-readonly>
+    <app-input-readonly labelName="Reason for arrears" value={{applicant.ReasonForArrears}}></app-input-readonly>
     <app-input-readonly labelName="Previous month arrears" value="£0.00"></app-input-readonly>
     <app-input-readonly labelName="Current month arrears" value="-£123.45"></app-input-readonly>
     <app-input-readonly labelName="Date & arrears balance" value="2"></app-input-readonly>

@@ -17,12 +17,25 @@ export class EquityService {
         NI: string,
         MobileNum: string,
         HomeNum: string,
+        WorkNum: string,
         Email: string,
         MartialStatus: string,
+        Social: string,
         Occupation: string,
         JobStatus: string,
         Dependants: string,
-        DependantsDOB: string
+        DependantsDOB: string,
+
+        Monthly: string,
+        CurrentArrears: string,
+        ReasonForArrears: string,
+        PreviousMonthArrears: string,
+        CurrentMonthArrears: string,
+        DateArrearsBalance: string,
+        ExperianCode: string,
+        PaymentType: string,
+        DDFlag: string,
+        ShortfallRequest: string
         ) {
         const applicantData: Equity = {
             id: id,
@@ -31,12 +44,25 @@ export class EquityService {
             NI: NI,
             MobileNum: MobileNum,
             HomeNum: HomeNum,
+            WorkNum: WorkNum,
             Email: Email,
             MartialStatus: MartialStatus,
+            Social: Social,
             Occupation: Occupation,
             JobStatus: JobStatus,
             Dependants: Dependants,
-            DependantsDOB: DependantsDOB
+            DependantsDOB: DependantsDOB,
+
+            Monthly: Monthly,
+            CurrentArrears: CurrentArrears,
+            ReasonForArrears: ReasonForArrears,
+            PreviousMonthArrears: PreviousMonthArrears,
+            CurrentMonthArrears: CurrentArrears,
+            DateArrearsBalance: DateArrearsBalance,
+            ExperianCode: ExperianCode,
+            PaymentType: PaymentType,
+            DDFlag: DDFlag,
+            ShortfallRequest: ShortfallRequest
         };
         console.log(applicantData)
 

@@ -23,12 +23,25 @@ export class MoreComponent implements OnInit {
         equityData.NI,
         equityData.MobileNum,
         equityData.HomeNum,
+        equityData.WorkNum,
         equityData.Email,
         equityData.MartialStatus,
+        equityData.Social,
         equityData.Occupation,
         equityData.JobStatus,
         equityData.Dependants,
-        equityData.DependantsDOB
+        equityData.DependantsDOB,
+
+        equityData.Monthly,
+        equityData.CurrentArrears,
+        equityData.ReasonForArrears,
+        equityData.PreviousMonthArrears,
+        equityData.CurrentMonthArrears,
+        equityData.DateArrearsBalance,
+        equityData.ExperianCode,
+        equityData.PaymentType,
+        equityData.DDFlag,
+        equityData.ShortfallRequest
       )
   }
 
