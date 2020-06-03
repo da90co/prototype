@@ -18,6 +18,17 @@ header {
                 color: black;
                 text-decoration: none;
                 padding-left: 1rem;
+
+                &.active {
+                    color: $primary-color;
+                    font-weight: bolder;
+                    text-decoration: underline;
+
+                    &:after {
+                        color: black;
+                        font-weight: normal;
+                    }
+                }
             }
 
             &:last-of-type {
