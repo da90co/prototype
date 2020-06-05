@@ -18,6 +18,7 @@ import { CustomerComponent } from './customer/customer.component';
 import { PropertyComponent } from './property/property.component';
 import { CasenotesComponent } from './casenotes/casenotes.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RentComponent,
     CustomerComponent,
     PropertyComponent,
-    CasenotesComponent
+    CasenotesComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
