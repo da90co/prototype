@@ -1,5 +1,38 @@
+@import "../../../scss/abstracts/abstracts";
+
 app-button {
-    & .primary {
-        background-color: green;
+    & button {
+        border: none;
+        padding: 1.5rem 2rem;
+        width: 20rem;
+        border-radius: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: .2s ease-in-out background-color;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.primary {
+            background-color: $primary-color;
+            color: white;
+
+            &:hover {
+                background-color: $primary-color-high;
+            }
+        }
+    
+        &.secondary {
+            background-color: #e7e7e7;
+
+            &:hover {
+                background-color: #dadada;
+            }
+        }
+    }
+
+    &:last-of-type {
+        margin-left: 1rem;
     }
 }
