@@ -51,9 +51,15 @@ app-equity {
             padding: 0 1rem;
             display: flex;
             flex-direction: row;
+            margin-bottom: .3rem;
 
-            label, input {
-                flex: 1 1 50%;
+            label {
+                flex: 1 1 100%;
+            }
+
+            input {
+                flex: 1 1 30%;
+                margin-left: 1.5rem;
             }
         }
 
