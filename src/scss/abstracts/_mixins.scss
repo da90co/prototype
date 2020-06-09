@@ -1,0 +1,13 @@
+@import "breakpoints";
+
+@mixin responsive($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content
+        }
+    }
+
+    @else {
+        @warn "no value in '#{$breakpoint}'." + "available breakpoints are : #{map-keys($breakpoints)}"
+    }
+}

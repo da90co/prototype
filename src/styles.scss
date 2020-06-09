@@ -1,19 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 //@import "./scss/abstracts/abstracts";
-
+@import "./scss/components/buttons.scss";
+@import "./scss/abstracts/mixins";
+@import "./scss/base/base";
 
 /* reset */
-html {
-    box-sizing: border-box;
-    font-size: 66.3%;
-}
-
-body {
+* {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+  }
 
-*:before, *:after {
-    box-sizing: border-box;
-}
+  html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+      overflow-x: hidden;
+  }
+
+  *, *:before, *:after {
+      box-sizing: inherit
+  }
+
+  :focus {
+      outline: none
+  }
+
+  ::-moz-focus-inner {
+      border:0;
+  }
+
+  ::-moz-focus-outer {
+      border:0;
+  }
+
+  select::-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+  }

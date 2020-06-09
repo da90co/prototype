@@ -1,0 +1,49 @@
+/*typography*/
+
+body, input {
+    font-family: Oswald, Open-Sans, sans-serif;
+  }
+  
+  input, body {
+    font-size: 1.8rem;
+  }
+  
+  p {
+    font-size: 2rem;
+    font-family: Open-Sans, sans-serif;
+    letter-spacing: .05rem;
+  }
+  
+  label, input {
+    font-size: 1.3rem;
+    font-family: Oswald, Open-Sans, sans-serif;
+  }
+
+  label {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem
+  }
+  
+  h3 {
+    font-size: 3rem
+  }
+  
+  h4 {
+    font-size: 2.5rem
+  }
+  
+  h5 {
+    font-size: 2rem
+  }
+  
+  h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
