@@ -5,6 +5,11 @@ header {
     box-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,.2);
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
+
+    @include responsive("phone") {
+        text-align: left;
+    }
 
     & span {
         color: #868686;
@@ -14,8 +19,12 @@ header {
         max-width: $max-width;
         margin: 0 auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         font-size: 1.4rem;
+
+        @include responsive("phone") {
+            flex-direction: row;
+        }
 
         & a {
             &:link, &:visited {
@@ -48,12 +57,16 @@ header {
             }
 
             &:after {
-                content: "|";
-                padding-left: 1rem;
+                @include responsive("phone") {
+                    content: "|";
+                    padding-left: 1rem;
+                }
             }
 
             &:nth-child(2) {
-                margin-left: auto;
+                @include responsive("phone") {
+                    margin-left: auto;
+                }
             }
         }
     }
