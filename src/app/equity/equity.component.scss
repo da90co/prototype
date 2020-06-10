@@ -1,11 +1,23 @@
+@import "../../scss/abstracts/abstracts";
+
 app-equity {
     flex: 1;
     display: flex;
+    flex-direction: column;
+
+    @include responsive("phone") {
+        flex-direction: row;
+    }
 
     & section > div:first-of-type {
         font-size: 1.6rem;
         margin: 0 1rem 1rem 1rem;
         font-weight: bold;
+        text-align: center;
+
+        @include responsive("phone") {
+            text-align: left;
+        }
     }
 
     #panel1 {
@@ -16,13 +28,19 @@ app-equity {
         flex-direction: row;
         flex-wrap: wrap;
         background-color: white;
-        border-radius: 1rem;
         padding: 1rem;
+
+        @include responsive("phone") {
+            border-radius: 1rem;
+        }
 
         & app-input {
             & .input-group {
                 & label, input, span {
-                    max-width: 35rem;
+                    @include responsive("phone") {
+                        max-width: 35rem;
+                    }
+
                 }
             }
         }
@@ -32,16 +50,26 @@ app-equity {
         }
 
         & .hw {
-            flex-basis: 50%;
+            flex-basis: 100%;
+            @include responsive("phone") {
+                flex-basis: 50%;
+            }
+
         }
         }
     }
 
     #panel2 {
         flex-basis: 30%;
-        margin-left: 2rem;
         padding: 0;
         max-height: 50%;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+
+        @include responsive("phone") {
+            margin-left: 2rem;
+            margin-top: 0;
+        }
 
         & section > div:first-of-type {
             padding: 1rem 1rem 0 1rem;
